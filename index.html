@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jhon Jader Velásquez | Experto en RCM & Auditoría Médica</title>
+    <meta name="description" content="Administrador de Empresas con enfoque en Revenue Cycle Management (RCM), Auditoría de Cuentas Médicas y procesos ADRES/SOAT. +8 años optimizando la recuperación financiera del sector salud.">
+    
+    <!-- Open Graph para LinkedIn -->
+    <meta property="og:title" content="Jhon Jader Velásquez | Líder en Gestión del Ciclo de Ingresos">
+    <meta property="og:description" content="Experiencia en recuperación financiera para IPS/EPS. Experto en ADRES, SOAT y reducción de glosas.">
+    <meta property="og:type" content="website">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            dark: '#0f172a', // Slate 900
+                            primary: '#1e3a8a', // Blue 900
+                            accent: '#d97706', // Amber 600
+                            light: '#f8fafc', // Slate 50
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        .fade-in-up {
+            animation: fadeInUp 0.8s ease-out forwards;
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .delay-100 { animation-delay: 0.1s; }
+        .delay-200 { animation-delay: 0.2s; }
+        .delay-300 { animation-delay: 0.3s; }
+
+        /* Smooth Scroll */
+        html { scroll-behavior: smooth; }
+        
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #f1f1f1; }
+        ::-webkit-scrollbar-thumb { background: #1e3a8a; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #d97706; }
+    </style>
+</head>
+<body class="bg-brand-light text-slate-800 font-sans antialiased selection:bg-brand-accent selection:text-white">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white/90 backdrop-blur-md shadow-sm z-50 transition-all duration-300" id="navbar">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center gap-2">
+                    <div class="w-10 h-10 bg-brand-primary rounded-lg flex items-center justify-center text-white font-bold text-xl shadow-lg">
+                        JV
+                    </div>
+                    <span class="font-serif font-bold text-xl text-brand-dark tracking-tight">Jhon Jader Velásquez</span>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="#perfil" class="text-slate-600 hover:text-brand-accent font-medium transition">Perfil</a>
+                    <a href="#logros" class="text-slate-600 hover:text-brand-accent font-medium transition">Impacto</a>
+                    <a href="#experiencia" class="text-slate-600 hover:text-brand-accent font-medium transition">Experiencia</a>
+                    <a href="#contacto" class="px-5 py-2.5 bg-brand-primary text-white rounded-full font-medium hover:bg-brand-dark transition shadow-md hover:shadow-lg transform hover:-translate-y-0.5">
+                        Contactar
+                    </a>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-slate-600 hover:text-brand-primary focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Panel -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 absolute w-full">
+            <div class="px-4 pt-2 pb-6 space-y-2 shadow-xl">
+                <a href="#perfil" class="block px-3 py-2 text-base font-medium text-slate-700 hover:text-brand-accent hover:bg-slate-50 rounded-md">Perfil</a>
+                <a href="#logros" class="block px-3 py-2 text-base font-medium text-slate-700 hover:text-brand-accent hover:bg-slate-50 rounded-md">Impacto</a>
+                <a href="#experiencia" class="block px-3 py-2 text-base font-medium text-slate-700 hover:text-brand-accent hover:bg-slate-50 rounded-md">Experiencia</a>
+                <a href="#contacto" class="block px-3 py-2 text-base font-medium text-brand-primary font-bold">Contactar</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
+        <!-- Background Elements -->
+        <div class="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 bg-brand-primary/5 rounded-full blur-3xl"></div>
+        <div class="absolute bottom-0 left-0 -ml-20 -mb-20 w-72 h-72 bg-brand-accent/10 rounded-full blur-3xl"></div>
+
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="fade-in-up">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-primary/10 text-brand-primary text-sm font-semibold mb-6 border border-brand-primary/20">
+                        <span class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
+                        Disponible para nuevos proyectos
+                    </div>
+                    <h1 class="text-4xl lg:text-6xl font-serif font-bold text-brand-dark leading-tight mb-6">
+                        Optimizo la <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-primary to-brand-accent">Recuperación Financiera</span> del Sector Salud
+                    </h1>
+                    <p class="text-lg lg:text-xl text-slate-600 mb-8 leading-relaxed max-w-2xl">
+                        Administrador de Empresas con <strong>+8 años de experiencia</strong> en Revenue Cycle Management (RCM), Auditoría de Cuentas Médicas y procesos ADRES/SOAT. Experto en convertir procesos complejos en resultados tangibles.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="#contacto" class="px-8 py-4 bg-brand-primary text-white rounded-lg font-semibold text-center hover:bg-brand-dark transition shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+                            <i class="fas fa-paper-plane mr-2"></i> Propuesta de Valor
+                        </a>
+                        <a href="#experiencia" class="px-8 py-4 bg-white text-brand-dark border-2 border-slate-200 rounded-lg font-semibold text-center hover:border-brand-primary hover:text-brand-primary transition">
+                            Ver Trayectoria
+                        </a>
+                    </div>
+                    
+                    <div class="mt-8 flex items-center gap-6 text-slate-500 text-sm">
+                        <div class="flex items-center gap-2">
+                            <i class="fas fa-map-marker-alt text-brand-accent"></i> Colombia
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <i class="fas fa-briefcase text-brand-accent"></i> Modalidad: Híbrida / Remota
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="relative hidden lg:block fade-in-up delay-200">
+                    <div class="relative z-10 bg-white p-2 rounded-2xl shadow-2xl rotate-2 hover:rotate-0 transition duration-500">
+                        <div class="bg-slate-100 rounded-xl p-8 h-full border border-slate-200">
+                            <div class="flex items-center gap-4 mb-6">
+                                <div class="w-16 h-16 bg-brand-primary rounded-full flex items-center justify-center text-white text-2xl font-serif font-bold border-4 border-white shadow-md">
+                                    JV
+                                </div>
+                                <div>
+                                    <h3 class="font-bold text-xl text-brand-dark">Jhon Jader Velásquez</h3>
+                                    <p class="text-brand-accent font-medium">Estratega en RCM, SOAT, ADRES</p>
+                                </div>
+                            </div>
+                            <div class="space-y-4">
+                                <div class="flex items-center gap-3 p-3 bg-white rounded-lg shadow-sm border border-slate-100">
+                                    <div class="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center text-green-600">
+                                        <i class="fas fa-check"></i>
+                                    </div>
+                                    <div>
+                                        <p class="text-xs text-slate-500 uppercase font-bold tracking-wider">Especialidad Principal</p>
+                                        <p class="font-semibold text-slate-800">Gestión ADRES & SOAT</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-center gap-3 p-3 bg-white rounded-lg shadow-sm border border-slate-100">
+                                    <div class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center text-blue-600">
+                                        <i class="fas fa-chart-line"></i>
+                                    </div>
+                                    <div>
+                                        <p class="text-xs text-slate-500 uppercase font-bold tracking-wider">Impacto Financiero</p>
+                                        <p class="font-semibold text-slate-800">+ $3.000M COP Recuperados</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-center gap-3 p-3 bg-white rounded-lg shadow-sm border border-slate-100">
+                                    <div class="w-10 h-10 rounded-full bg-amber-100 flex items-center justify-center text-amber-600">
+                                        <i class="fas fa-shield-alt"></i>
+                                    </div>
+                                    <div>
+                                        <p class="text-xs text-slate-500 uppercase font-bold tracking-wider">Reducción de Riesgo</p>
+                                        <p class="font-semibold text-slate-800">-45% en Glosas</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Decorative elements behind card -->
+                    <div class="absolute top-10 -right-4 w-full h-full bg-brand-accent/20 rounded-2xl -z-10 rotate-6"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats / Key Achievements Section -->
+    <section id="logros" class="py-20 bg-brand-dark text-white relative overflow-hidden">
+        <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-5"></div>
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center mb-16 fade-in-up">
+                <h2 class="text-brand-accent font-bold tracking-widest uppercase text-sm mb-2">Resultados Comprobados</h2>
+                <h3 class="text-3xl lg:text-4xl font-serif font-bold">Impacto Financiero Directo</h3>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8 text-center">
+                <div class="p-6 bg-white/5 backdrop-blur-sm rounded-2xl border border-white/10 hover:bg-white/10 transition duration-300 fade-in-up delay-100 group">
+                    <div class="text-5xl font-bold text-brand-accent mb-2 group-hover:scale-110 transition transform">$3.000M</div>
+                    <div class="text-lg font-semibold text-white mb-1">COP Recuperados</div>
+                    <p class="text-slate-400 text-sm">Liderando procesos de auditoría y gestión estratégica de reclamaciones ante ADRES.</p>
+                </div>
+                
+                <div class="p-6 bg-white/5 backdrop-blur-sm rounded-2xl border border-white/10 hover:bg-white/10 transition duration-300 fade-in-up delay-200 group">
+                    <div class="text-5xl font-bold text-brand-accent mb-2 group-hover:scale-110 transition transform">45%</div>
+                    <div class="text-lg font-semibold text-white mb-1">Reducción de Glosas</div>
+                    <p class="text-slate-400 text-sm">Implementación de controles, estandarización documental y fortalecimiento de pre-auditoría.</p>
+                </div>
+                
+                <div class="p-6 bg-white/5 backdrop-blur-sm rounded-2xl border border-white/10 hover:bg-white/10 transition duration-300 fade-in-up delay-300 group">
+                    <div class="text-5xl font-bold text-brand-accent mb-2 group-hover:scale-110 transition transform">100%</div>
+                    <div class="text-lg font-semibold text-white mb-1">Radicación Efectiva</div>
+                    <p class="text-slate-400 text-sm">Incremento en radicación ante ADRES mediante optimización de requisitos técnicos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Professional Profile -->
+    <section id="perfil" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-12 gap-12">
+                <div class="lg:col-span-4">
+                    <div class="sticky top-24">
+                        <h2 class="text-3xl font-serif font-bold text-brand-dark mb-6">Perfil Profesional</h2>
+                        <div class="w-20 h-1.5 bg-brand-accent mb-6"></div>
+                        <p class="text-slate-600 leading-relaxed mb-6">
+                            Profesional con enfoque en la <strong>sostenibilidad institucional</strong> a través de la gestión eficiente del ciclo de ingresos.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-slate-100 text-slate-700 rounded-full text-sm font-medium">Revenue Cycle Management</span>
+                            <span class="px-3 py-1 bg-slate-100 text-slate-700 rounded-full text-sm font-medium">ADRES</span>
+                            <span class="px-3 py-1 bg-slate-100 text-slate-700 rounded-full text-sm font-medium">SOAT</span>
+                            <span class="px-3 py-1 bg-slate-100 text-slate-700 rounded-full text-sm font-medium">Auditoría Médica</span>
+                            <span class="px-3 py-1 bg-slate-100 text-slate-700 rounded-full text-sm font-medium">Gestión de Glosas</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="lg:col-span-8 space-y-8">
+                    <div class="prose prose-lg text-slate-600">
+                        <p class="text-xl leading-relaxed text-slate-800 font-medium border-l-4 border-brand-accent pl-6 mb-8">
+                            "Mi objetivo es articular áreas clínicas y administrativas para garantizar el cumplimiento normativo con impacto directo en la recuperación financiera."
+                        </p>
+                        <p class="mb-4">
+                            Como Administrador de Empresas, he dedicado mi carrera a resolver uno de los mayores dolores de cabeza del sector salud en Colombia: la <strong>gestión eficiente del ciclo de ingresos</strong>. Mi experiencia no se limita a la revisión de cuentas; abarca la <strong>optimización de procesos</strong>, la reducción de riesgos financieros y el fortalecimiento de controles internos.
+                        </p>
+                        <p>
+                            Me especializo en la intermediación técnica entre prestadores (IPS) y pagadores (EPS/ADRES), asegurando que la documentación y la facturación cumplan con los estándares normativos para maximizar la recuperación de cartera.
+                        </p>
+                    </div>
+
+                    <!-- Competencias Grid -->
+                    <div class="grid sm:grid-cols-2 gap-4 mt-8">
+                        <div class="p-4 border border-slate-200 rounded-lg hover:border-brand-primary hover:shadow-md transition">
+                            <i class="fas fa-search-dollar text-brand-primary text-2xl mb-3"></i>
+                            <h4 class="font-bold text-brand-dark mb-1">Auditoría de Cuentas</h4>
+                            <p class="text-sm text-slate-500">Revisión técnica y conciliación con aseguradores.</p>
+                        </div>
+                        <div class="p-4 border border-slate-200 rounded-lg hover:border-brand-primary hover:shadow-md transition">
+                            <i class="fas fa-file-invoice-dollar text-brand-primary text-2xl mb-3"></i>
+                            <h4 class="font-bold text-brand-dark mb-1">Gestión ADRES/SOAT</h4>
+                            <p class="text-sm text-slate-500">Experticia en normatividad y radicación.</p>
+                        </div>
+                        <div class="p-4 border border-slate-200 rounded-lg hover:border-brand-primary hover:shadow-md transition">
+                            <i class="fas fa-chart-pie text-brand-primary text-2xl mb-3"></i>
+                            <h4 class="font-bold text-brand-dark mb-1">Análisis Financiero</h4>
+                            <p class="text-sm text-slate-500">Indicadores de gestión y flujo de caja.</p>
+                        </div>
+                        <div class="p-4 border border-slate-200 rounded-lg hover:border-brand-primary hover:shadow-md transition">
+                            <i class="fas fa-tasks text-brand-primary text-2xl mb-3"></i>
+                            <h4 class="font-bold text-brand-dark mb-1">Mejora Continua (PHVA)</h4>
+                            <p class="text-sm text-slate-500">Implementación de metodologías de control.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Timeline -->
+    <section id="experiencia" class="py-20 bg-slate-50">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl lg:text-4xl font-serif font-bold text-brand-dark mb-4">Trayectoria Profesional</h2>
+                <p class="text-slate-600 max-w-2xl mx-auto">Evolución desde la ejecución operativa hasta el liderazgo técnico y la consultoría estratégica.</p>
+            </div>
+
+            <div class="relative">
+                <!-- Vertical Line -->
+                <div class="hidden md:block absolute left-1/2 transform -translate-x-1/2 h-full w-0.5 bg-slate-200"></div>
+
+                <!-- Item 1: Consultor -->
+                <div class="relative mb-12 md:mb-0">
+                    <div class="md:flex items-center justify-between w-full">
+                        <div class="md:w-5/12 order-1 md:text-right pr-8">
+                            <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-brand-accent hover:shadow-xl transition duration-300">
+                                <span class="text-brand-accent font-bold text-sm uppercase tracking-wider">Jul 2025 - Actualidad</span>
+                                <h3 class="text-xl font-bold text-brand-dark mt-2">Consultor Independiente RCM</h3>
+                                <p class="text-slate-500 font-medium mb-3">Jornada Parcial (Híbrido/Remoto)</p>
+                                <ul class="text-slate-600 text-sm space-y-2 list-disc list-inside">
+                                    <li>Diagnóstico y mejora de procesos administrativos para IPS.</li>
+                                    <li>Acompañamiento técnico en conciliaciones con aseguradores.</li>
+                                    <li>Diseño de metodologías de control y mejora continua.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="hidden md:flex items-center justify-center absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-brand-accent border-4 border-white shadow z-10">
+                            <i class="fas fa-user-tie text-white text-sm"></i>
+                        </div>
+                        <div class="md:w-5/12 order-1 pl-8"></div>
+                    </div>
+                </div>
+
+                <!-- Item 2: Christus -->
+                <div class="relative mb-12 md:mb-0 md:mt-12">
+                    <div class="md:flex items-center justify-between w-full">
+                        <div class="md:w-5/12 order-1"></div>
+                        <div class="hidden md:flex items-center justify-center absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-brand-primary border-4 border-white shadow z-10">
+                            <i class="fas fa-hospital text-white text-sm"></i>
+                        </div>
+                        <div class="md:w-5/12 order-1 pl-8">
+                            <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-brand-primary hover:shadow-xl transition duration-300">
+                                <span class="text-brand-primary font-bold text-sm uppercase tracking-wider">Dic 2023 - Ene 2026</span>
+                                <h3 class="text-xl font-bold text-brand-dark mt-2">Analista Nacional de Auditoría</h3>
+                                <p class="text-slate-500 font-medium mb-3">Christus Sinergia Salud</p>
+                                <ul class="text-slate-600 text-sm space-y-2 list-disc list-inside">
+                                    <li>Liderazgo operativo del proceso ADRES y coordinación con jefatura de enfermería.</li>
+                                    <li>Supervisión de equipo operativo y validación documental.</li>
+                                    <li>Análisis de indicadores para toma de decisiones financieras.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 3: EPS SOS -->
+                <div class="relative md:mt-12">
+                    <div class="md:flex items-center justify-between w-full">
+                        <div class="md:w-5/12 order-1 md:text-right pr-8">
+                            <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-slate-400 hover:shadow-xl transition duration-300">
+                                <span class="text-slate-500 font-bold text-sm uppercase tracking-wider">Mar 2019 - Nov 2023</span>
+                                <h3 class="text-xl font-bold text-brand-dark mt-2">Analista de Auditoría Médica</h3>
+                                <p class="text-slate-500 font-medium mb-3">EPS S.O.S</p>
+                                <ul class="text-slate-600 text-sm space-y-2 list-disc list-inside">
+                                    <li>Ejecución de auditoría de cuentas médicas y control de cartera.</li>
+                                    <li>Análisis de hallazgos y apoyo en implementación de mejoras.</li>
+                                    <li>Fortalecimiento del control financiero y transparencia.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="hidden md:flex items-center justify-center absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-slate-400 border-4 border-white shadow z-10">
+                            <i class="fas fa-clipboard-check text-white text-sm"></i>
+                        </div>
+                        <div class="md:w-5/12 order-1 pl-8"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Education & Certs -->
+    <section class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="text-2xl font-serif font-bold text-brand-dark mb-6 flex items-center gap-3">
+                        <i class="fas fa-graduation-cap text-brand-primary"></i> Formación Académica
+                    </h3>
+                    <div class="space-y-6">
+                        <div class="flex gap-4">
+                            <div class="flex-shrink-0 w-12 h-12 bg-slate-100 rounded-full flex items-center justify-center text-brand-primary font-bold">MBA</div>
+                            <div>
+                                <h4 class="font-bold text-brand-dark">MBA – Máster en Administración y Dirección de Empresas</h4>
+                                <p class="text-slate-600 text-sm">Master en Project Management</p>
+                                <p class="text-slate-500 text-xs mt-1">ENEB – Escuela de Negocios Europea de Barcelona (En curso)</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="flex-shrink-0 w-12 h-12 bg-slate-100 rounded-full flex items-center justify-center text-brand-primary font-bold">AD</div>
+                            <div>
+                                <h4 class="font-bold text-brand-dark">Administrador de Empresas</h4>
+                                <p class="text-slate-500 text-xs mt-1">Universidad Nacional Abierta y a Distancia (UNAD)</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="flex-shrink-0 w-12 h-12 bg-slate-100 rounded-full flex items-center justify-center text-brand-primary font-bold">TG</div>
+                            <div>
+                                <h4 class="font-bold text-brand-dark">Tecnólogo en Gestión Empresarial</h4>
+                                <p class="text-slate-500 text-xs mt-1">CORUNIVERSITEC</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-2xl font-serif font-bold text-brand-dark mb-6 flex items-center gap-3">
+                        <i class="fas fa-certificate text-brand-accent"></i> Certificaciones Clave
+                    </h3>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div class="p-4 bg-slate-50 rounded-lg border border-slate-100">
+                            <h4 class="font-bold text-brand-dark text-sm">Diplomado en Alta Gerencia</h4>
+                            <p class="text-xs text-slate-500">Politécnico de Colombia</p>
+                        </div>
+                        <div class="p-4 bg-slate-50 rounded-lg border border-slate-100">
+                            <h4 class="font-bold text-brand-dark text-sm">Auditor Interno ISO 9001/14001/45001</h4>
+                            <p class="text-xs text-slate-500">EIDEC</p>
+                        </div>
+                        <div class="p-4 bg-slate-50 rounded-lg border border-slate-100">
+                            <h4 class="font-bold text-brand-dark text-sm">Gerencia de Servicios de Salud</h4>
+                            <p class="text-xs text-slate-500">Politécnico de Colombia</p>
+                        </div>
+                        <div class="p-4 bg-slate-50 rounded-lg border border-slate-100">
+                            <h4 class="font-bold text-brand-dark text-sm">Gestión de Proyectos y Equipos</h4>
+                            <p class="text-xs text-slate-500">Santander Open Academy</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="py-20 bg-brand-dark text-white relative overflow-hidden">
+        <div class="absolute top-0 left-0 w-full h-full overflow-hidden z-0">
+            <div class="absolute top-10 left-10 w-64 h-64 bg-brand-primary rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob"></div>
+            <div class="absolute top-10 right-10 w-64 h-64 bg-brand-accent rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-2000"></div>
+        </div>
+
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+            <h2 class="text-3xl lg:text-4xl font-serif font-bold mb-6">¿Buscas optimizar la rentabilidad de tu IPS?</h2>
+            <p class="text-lg text-slate-300 mb-10">
+                Estoy disponible para liderar procesos de auditoría, consultorías específicas en RCM o roles de gestión en el sector salud. Conectemos.
+            </p>
+
+            <div class="grid md:grid-cols-3 gap-6 mb-12">
+                <a href="mailto:jadervelasquez42@gmail.com" class="flex flex-col items-center p-6 bg-white/5 rounded-xl border border-white/10 hover:bg-white/10 transition group">
+                    <div class="w-12 h-12 bg-brand-accent rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition">
+                        <i class="fas fa-envelope text-white text-xl"></i>
+                    </div>
+                    <span class="font-semibold">Email</span>
+                    <span class="text-sm text-slate-400 mt-1">jadervelasquez42@gmail.com</span>
+                </a>
+                
+                <a href="tel:+573173890879" class="flex flex-col items-center p-6 bg-white/5 rounded-xl border border-white/10 hover:bg-white/10 transition group">
+                    <div class="w-12 h-12 bg-brand-accent rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition">
+                        <i class="fas fa-phone text-white text-xl"></i>
+                    </div>
+                    <span class="font-semibold">Teléfono</span>
+                    <span class="text-sm text-slate-400 mt-1">+57 317 389 0879</span>
+                </a>
+
+                <a href="https://www.linkedin.com/in/jhonjadervelasquez/" class="flex flex-col items-center p-6 bg-white/5 rounded-xl border border-white/10 hover:bg-white/10 transition group">
+                    <div class="w-12 h-12 bg-brand-accent rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition">
+                        <i class="fab fa-linkedin-in text-white text-xl"></i>
+                    </div>
+                    <span class="font-semibold">LinkedIn</span>
+                    <span class="text-sm text-slate-400 mt-1">jhonjadervelasquez</span>
+                </a>
+            </div>
+
+            <div class="text-slate-500 text-sm">
+                <p>&copy; 2026 Jhon Jader Velásquez. Portafolio Profesional.</p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Mobile Menu Toggle
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when clicking a link
+        menu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.add('hidden');
+            });
+        });
+
+        // Navbar scroll effect
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('shadow-md');
+                navbar.classList.replace('bg-white/90', 'bg-white/95');
+            } else {
+                navbar.classList.remove('shadow-md');
+                navbar.classList.replace('bg-white/95', 'bg-white/90');
+            }
+        });
+
+        // Intersection Observer for animations
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.animationPlayState = 'running';
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in-up').forEach(el => {
+            el.style.animationPlayState = 'paused';
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
